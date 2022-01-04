@@ -80,6 +80,7 @@ export default ({
     <NavLinks key={1}>
       <NavLink href="/#">Início</NavLink>
       <NavLink href="/#">Quem somos</NavLink>
+      <NavLink href="/#">Clientes</NavLink>
       <NavLink href="/#">Planos</NavLink>
       <PrimaryLink css={roundedHeaderButton && tw`rounded-full`} href="/#">
         Fale conosco

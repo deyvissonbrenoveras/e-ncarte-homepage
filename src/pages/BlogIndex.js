@@ -85,7 +85,7 @@ export default ({
 }) => {
   const [visible, setVisible] = useState(7);
   const onLoadMoreClick = () => {
-    // setVisible(v => v + 6);
+    setVisible((v) => v + 6);
   };
   return (
     <AnimationRevealPage>

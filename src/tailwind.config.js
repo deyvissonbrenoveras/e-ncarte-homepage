@@ -16,6 +16,8 @@ module.exports = {
       black: "#000",
       white: "#fff",
       encarte: "#ed2f57",
+      footer: "#262626",
+      decorator: "#424242",
 
       primary: {
         100: "#a273ff",
