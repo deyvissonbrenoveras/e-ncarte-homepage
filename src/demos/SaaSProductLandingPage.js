@@ -26,24 +26,19 @@ export default () => {
     <AnimationRevealPage>
       <Hero roundedHeaderButton={true} />
       <Features
-        subheading={<Subheading>Features</Subheading>}
+        subheading={<Subheading>Sobre o nosso serviço</Subheading>}
         heading={
           <>
-            We have Amazing <HighlightedText>Service.</HighlightedText>
+            Exponha sua loja e ganhe{" "}
+            <HighlightedText>Visibilidade.</HighlightedText>
           </>
         }
       />
-      <MainFeature
-        subheading={<Subheading>Quality Work</Subheading>}
-        imageSrc={heroScreenshotImageSrc}
-        imageBorder={true}
-        imageDecoratorBlob={true}
-      />
       <FeatureWithSteps
-        subheading={<Subheading>STEPS</Subheading>}
+        subheading={<Subheading>Passo a passo</Subheading>}
         heading={
           <>
-            Easy to <HighlightedText>Get Started.</HighlightedText>
+            É muito fácil ter a sua <HighlightedText>Página.</HighlightedText>
           </>
         }
         textOnLeft={false}
@@ -51,6 +46,13 @@ export default () => {
         imageDecoratorBlob={true}
         decoratorBlobCss={tw`xl:w-40 xl:h-40 opacity-15 -translate-x-1/2 left-1/2`}
       />
+      <MainFeature
+        subheading={<Subheading>Quality Work</Subheading>}
+        imageSrc={heroScreenshotImageSrc}
+        imageBorder={true}
+        imageDecoratorBlob={true}
+      />
+
       <MainFeature2
         subheading={<Subheading>VALUES</Subheading>}
         heading={
@@ -127,32 +129,24 @@ export default () => {
         ]}
       />
       <Testimonial
-        subheading={<Subheading>Testimonials</Subheading>}
+        subheading={<Subheading>Cases de sucesso</Subheading>}
+        description="Veja abaixo o feedback de um dos nossos clientes"
         heading={
           <>
-            Our Clients <HighlightedText>Love Us.</HighlightedText>
+            O que estão falando sobre o{" "}
+            <HighlightedText>e-ncarte.</HighlightedText>
           </>
         }
         testimonials={[
           {
             stars: 5,
             profileImageSrc:
-              "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3.25&w=512&h=512&q=80",
-            heading: "Amazing User Experience",
+              "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=512&h=512&q=80",
+            heading: "Estou tendo ótimos resultados",
             quote:
               "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-            customerName: "Charlotte Hale",
-            customerTitle: "Director, Delos Inc.",
-          },
-          {
-            stars: 5,
-            profileImageSrc:
-              "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=512&h=512&q=80",
-            heading: "Love the Developer Experience and Design Principles !",
-            quote:
-              "Sinor Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-            customerName: "Adam Cuppy",
-            customerTitle: "Founder, EventsNYC",
+            customerName: "Flávio",
+            customerTitle: "Diretor, Rede Sertaneja.",
           },
         ]}
       />
