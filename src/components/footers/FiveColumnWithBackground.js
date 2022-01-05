@@ -3,10 +3,10 @@ import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 
-import LogoImage from "images/logo.png";
+import LogoImage from "images/logo-2.png";
 import { ReactComponent as FacebookIcon } from "images/facebook-icon.svg";
-import { ReactComponent as TwitterIcon } from "images/twitter-icon.svg";
-import { ReactComponent as YoutubeIcon } from "images/youtube-icon.svg";
+import { ReactComponent as WhatsappIcon } from "images/whatsapp-icon.svg";
+import { ReactComponent as InstagramIcon } from "images/instagram-icon.svg";
 import { ReactComponent as SvgDecoratorBlob1 } from "images/svg-decorator-blob-9.svg";
 
 const Container = tw.div`relative bg-footer text-gray-100 -mb-8 -mx-8 px-8 py-20 lg:py-24`;
@@ -149,14 +149,14 @@ export default () => {
             &copy; {nowYear} e-ncarte publicidade. Todos os direitos reservados.
           </CopywrightNotice>
           <SocialLinksContainer>
-            <SocialLink href="https://facebook.com">
+            <SocialLink href="https://www.facebook.com/agenciaencarte">
               <FacebookIcon />
             </SocialLink>
-            <SocialLink href="https://twitter.com">
-              <TwitterIcon />
+            <SocialLink href="https://www.instagram.com/e_ncarte/">
+              <InstagramIcon />
             </SocialLink>
-            <SocialLink href="https://youtube.com">
-              <YoutubeIcon />
+            <SocialLink href="https://api.whatsapp.com/send?phone=558393609556">
+              <WhatsappIcon />
             </SocialLink>
           </SocialLinksContainer>
         </ThreeColRow>
