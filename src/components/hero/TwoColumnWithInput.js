@@ -9,7 +9,8 @@ import Header from "../headers/light.js";
 import { ReactComponent as SvgDecoratorBlob1 } from "../../images/svg-decorator-blob-1.svg";
 import illustration_1 from "../../images/illustration-1.webp";
 import CustomersLogoStripImage from "../../images/customers-logo-strip.png";
-
+import { PrimaryLink } from "../headers/light.js";
+import env from "react-dotenv";
 const Container = tw.div`relative`;
 const TwoColumn = tw.div`flex flex-col lg:flex-row lg:items-center max-w-screen-xl mx-auto py-20 md:py-24`;
 const LeftColumn = tw.div`relative lg:w-5/12 text-center max-w-lg mx-auto lg:max-w-none lg:text-left`;
@@ -60,14 +61,20 @@ export default ({ roundedHeaderButton }) => {
               Divulgue seus produtos através da internet e obtenha mais vendas
               através da visibilidade digital.
             </Paragraph>
-            <Actions>
+            {/* <Actions>
               <input type="text" placeholder="Your E-mail Address" />
               <button>Get Started</button>
-            </Actions>
-            <CustomersLogoStrip>
+            </Actions> */}
+            <PrimaryLink
+              css={roundedHeaderButton && tw`rounded-full`}
+              href={env.contact_us}
+            >
+              Fale conosco
+            </PrimaryLink>
+            {/* <CustomersLogoStrip>
               <p>Our TRUSTED Customers</p>
               <img src={CustomersLogoStripImage} alt="Our Customers" />
-            </CustomersLogoStrip>
+            </CustomersLogoStrip> */}
           </LeftColumn>
           <RightColumn>
             <IllustrationContainer>

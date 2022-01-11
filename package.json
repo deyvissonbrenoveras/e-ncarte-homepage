@@ -12,6 +12,7 @@
     "react": "^17.0.2",
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^17.0.2",
+    "react-dotenv": "^0.1.3",
     "react-github-btn": "^1.2.0",
     "react-modal": "^3.13.1",
     "react-rnd": "^10.2.4",
@@ -24,11 +25,11 @@
     "twin.macro": "^2.3.3"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "deploy": "yarn build && netlify deploy --prod --dir=build"
+    "start": "react-dotenv && react-scripts start",
+    "build": "react-dotenv && react-scripts build",
+    "test": "react-dotenv && react-scripts test",
+    "eject": "react-dotenv && react-scripts eject",
+    "deploy": "react-dotenv && yarn build && netlify deploy --prod --dir=build"
   },
   "eslintConfig": {
     "extends": "react-app",

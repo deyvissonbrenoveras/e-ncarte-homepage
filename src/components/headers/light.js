@@ -9,6 +9,7 @@ import useAnimatedNavToggler from "../../helpers/useAnimatedNavToggler.js";
 import logo from "../../images/logo.png";
 import { ReactComponent as MenuIcon } from "feather-icons/dist/icons/menu.svg";
 import { ReactComponent as CloseIcon } from "feather-icons/dist/icons/x.svg";
+import env from "react-dotenv";
 
 const Header = tw.header`
   flex justify-between items-center
@@ -82,7 +83,10 @@ export default ({
       <NavLink href="/#">Quem somos</NavLink>
       <NavLink href="/#">Clientes</NavLink>
       <NavLink href="/#">Planos</NavLink>
-      <PrimaryLink css={roundedHeaderButton && tw`rounded-full`} href="/#">
+      <PrimaryLink
+        css={roundedHeaderButton && tw`rounded-full`}
+        href={env.contact_us}
+      >
         Fale conosco
       </PrimaryLink>
     </NavLinks>,

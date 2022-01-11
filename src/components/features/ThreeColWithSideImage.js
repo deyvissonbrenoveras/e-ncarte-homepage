@@ -79,24 +79,23 @@ export default ({
     {
       imageSrc: ShieldIconImage,
       title: "Venda online",
-      description:
-        "Receba pedidos através do whatsapp em integração com o e-ncarte.",
+      description: "Receba pedidos no seu whatsapp através da loja online.",
     },
     {
       imageSrc: SupportIconImage,
-      title: "Atendimento personalizado",
-      description: "Obtenha suporte personalizado em horário comercial",
+      title: "Captação de leads",
+      description: "Prospecte e consiga novos clientes através do e-ncarte.",
     },
     {
       imageSrc: CustomizeIconImage,
-      title: "Espaço para patrocinadores",
-      description: "Divulgue seus patrocinadores e comercialize sua página",
+      title: "Expansão e fortalecimento da marca",
+      description: "Aumente a confiabilidade e autoridade da sua marca.",
     },
     {
       imageSrc: ReliableIconImage,
-      title: "Divulgação nas redes sociais",
+      title: "Fidelização",
       description:
-        "incluso trabalho de divulgação e impulsionamento nas redes sociais.",
+        "Entrege inovação e mais profissionalismo aos seus atuais clientes",
     },
     {
       imageSrc: FastIconImage,
@@ -106,7 +105,7 @@ export default ({
     {
       imageSrc: SimpleIconImage,
       title: "Relatórios",
-      description: "Obtenha relatórios de acesso da sua página.",
+      description: "Obtenha informações detalhadas de acesso da sua loja.",
     },
   ];
 

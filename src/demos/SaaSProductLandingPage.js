@@ -1,8 +1,10 @@
 import React from "react";
 import tw from "twin.macro";
+import env from "react-dotenv";
 // import { css } from "styled-components/macro"; //eslint-disable-line
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import Hero from "components/hero/TwoColumnWithInput.js";
+import Hero2 from "components/hero/TwoColumnWithVideo";
 import Features from "components/features/ThreeColWithSideImage.js";
 import MainFeature from "components/features/TwoColWithButton.js";
 import MainFeature2 from "components/features/TwoColWithTwoHorizontalFeaturesAndButton.js";
@@ -33,6 +35,7 @@ export default () => {
             <HighlightedText>Visibilidade.</HighlightedText>
           </>
         }
+        description="A publicidade digital está em ascendência no cenário atual. O digital predomina todas as ações do mercado no geral, permitindo que traçamos estratégias eficazes para aumentar as vendas do seu negócio."
       />
       <FeatureWithSteps
         subheading={<Subheading>Passo a passo</Subheading>}
@@ -47,38 +50,50 @@ export default () => {
         decoratorBlobCss={tw`xl:w-40 xl:h-40 opacity-15 -translate-x-1/2 left-1/2`}
       />
       <MainFeature
-        subheading={<Subheading>Quality Work</Subheading>}
+        subheading={<Subheading>Quem somos</Subheading>}
         imageSrc={heroScreenshotImageSrc}
         imageBorder={true}
         imageDecoratorBlob={true}
       />
+      <Hero2
+        heading="Aplicativo da sua loja"
+        description="Ofereça seus clientes um aplicativo com carrinho, lista de compras e recebimento de pedidos via Whatsapp."
+        primaryButtonText="FALE CONOSCO"
+        primaryButtonUrl={env.contact_us}
+        watchVideoButtonText="Veja o vídeo"
+        watchVideoYoutubeUrl="https://www.youtube.com/embed/TBj8i2gS584"
+      />
 
       <MainFeature2
-        subheading={<Subheading>VALUES</Subheading>}
+        subheading={<Subheading>RETORNO IMEDIATO</Subheading>}
         heading={
           <>
-            We Always Abide by Our{" "}
-            <HighlightedText>Principles.</HighlightedText>
+            Aproveite os benefícios da{" "}
+            <HighlightedText>vitrine virtual </HighlightedText>
+            imediatamente.
           </>
         }
+        description="As vantagens de ter uma exposição online são muitas mas podemos destacar alguns benefícios imediatos"
         imageSrc={prototypeIllustrationImageSrc}
         showDecoratorBlob={false}
         features={[
           {
             Icon: MoneyIcon,
-            title: "Affordable",
+            title: "Economize",
             description:
-              "We promise to offer you the best rate we can - at par with the industry standard.",
+              "Com a loja online não será necessário investir alto em produção e entrega de panfletos",
             iconContainerCss: tw`bg-green-300 text-green-800`,
           },
           {
             Icon: BriefcaseIcon,
-            title: "Professionalism",
+            title: "Compromisso com o meio ambiente",
             description:
-              "We assure you that our templates are designed and created by professional designers.",
+              "Com a diminuição da impressão de panfletos, sua impresa irá contribuir diretamente com a preservação do meio ambiente",
             iconContainerCss: tw`bg-red-300 text-red-800`,
           },
         ]}
+        primaryButtonText="FALE CONOSCO"
+        primaryButtonUrl={env.contact_us}
       />
       <Pricing
         subheading={<Subheading>Preços</Subheading>}
@@ -87,44 +102,51 @@ export default () => {
             Os melhores e flexíveis <HighlightedText>Planos.</HighlightedText>
           </>
         }
+        primaryButtonText="COMPRAR"
         plans={[
           {
             name: "Básico",
-            price: "199 R$",
+            price: "200 R$",
             duration: "Mensal",
             mainFeature: "Plano inicial",
             features: [
-              "25 produtos",
-              "2 espaços para patrocinadores",
-              "Trabalho nas redes sociais",
-              "Site, App, Qrcode",
-              "1 baner virtual mensal",
-              "Relatórios mensais",
+              "Marketing digital em Mídias Sociais, Site e Aplicativo",
+              "Trabalho realizado com até 25 produtos e 2 parceiros comerciais",
+              "Relatório de acessos mensal",
+              "Qrcode personalizado",
+              "1 Banner virtual mensal",
+              "1 Campanha de marketing mensal",
+              "Até 2 produtos destaque",
+              "Sistema de pedidos via whatsapp",
+              "Período mínimo de adesão de 3 meses",
             ],
           },
           {
             name: "Avançado",
-            price: "599 R$",
+            price: "600 R$",
             duration: "Mensal",
             mainFeature: "Para pequenas empresas",
             features: [
-              "80 produtos",
-              "6 espaços para patrocinadores",
-              "Trabalho nas redes sociais",
-              "Site, App, Qrcode",
-              "1 baner virtual mensal",
-              "Relatórios mensais",
+              "Marketing digital em Mídias Sociais, Site e Aplicativo",
+              "Trabalho realizado com até 80 produtos e 6 parceiros comerciais",
+              "Relatório de acessos mensal",
+              "Qrcode personalizado",
+              "2 Banner virtual mensal",
+              "2 Campanha de marketing mensal",
+              "Até 8 produtos destaque",
+              "Sistema de pedidos via whatsapp",
+              "Período mínimo de adesão de 3 meses",
             ],
-            featured: true,
           },
           {
             name: "Personalizado",
-            price: "Variável",
-            duration: "Monthly",
             mainFeature: "Para pequenas e médias empresas",
             features: [
-              "Nos fale suas necessidades e iremos elaborar um projeto sob medida para você",
+              "Agende uma reunião virtual e conte-nos a sua necessidade",
+              "Desenharemos um projeto de marketing digital voltado para o seu empreendimento",
+              "Tudo sob medida para seu bolso e seus objetivo",
             ],
+            featured: true,
           },
         ]}
       />

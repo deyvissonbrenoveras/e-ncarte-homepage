@@ -64,18 +64,19 @@ export default ({
 
   const defaultSteps = [
     {
-      heading: "Escolha um plano",
-      description: "Escolha plano que melhor se encaixe em suas necessidades.",
-    },
-    {
       heading: "Entre em contato",
       description:
         "Contate nos através do Whatsapp (83)9-9360-9556 ou pelo e-mail contato@e-ncarte.com.",
     },
     {
-      heading: "Agora é só aguardar",
+      heading: "Escolha um plano",
       description:
-        "Iremos formular uma estratégia para exibição e divulgação dos seus produtos e então entraremos em contato",
+        "Iremos definir o plano que se encaixar melhor à sua empresa, de acordo com a sua necessidade.",
+    },
+    {
+      heading: "Acompanhe de resultados",
+      description:
+        "Realizaremos reuniões periódicas para análise e demonstração dos relatórios.",
     },
   ];
 
