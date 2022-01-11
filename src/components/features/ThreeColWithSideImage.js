@@ -13,12 +13,12 @@ import defaultCardImage from "images/shield-icon.svg";
 
 import { ReactComponent as SvgDecoratorBlob3 } from "images/svg-decorator-blob-3.svg";
 
-import SupportIconImage from "images/support-icon.svg";
-import ShieldIconImage from "images/shield-icon.svg";
-import CustomizeIconImage from "images/customize-icon.svg";
-import FastIconImage from "images/fast-icon.svg";
-import ReliableIconImage from "images/reliable-icon.svg";
-import SimpleIconImage from "images/simple-icon.svg";
+import FunnelIconImage from "images/funnel-icon.svg";
+import SalesIconImage from "images/sales-icon.svg";
+import GrowthIconImage from "images/growth-icon.svg";
+import TargetIconImage from "images/target-icon.svg";
+import LoyaltyIconImage from "images/loyalty-icon.svg";
+import ReportIconImage from "images/report-icon.svg";
 
 const Container = tw.div`relative`;
 
@@ -43,7 +43,9 @@ const Card = styled.div`
       ${tw`w-6 h-6`}
     }
   }
-
+  .icon {
+    ${tw`text-encarte`}
+  }
   .textContainer {
     ${tw`sm:ml-4 mt-4 sm:mt-2`}
   }
@@ -77,33 +79,33 @@ export default ({
 
   const defaultCards = [
     {
-      imageSrc: ShieldIconImage,
+      imageSrc: SalesIconImage,
       title: "Venda online",
       description: "Receba pedidos no seu whatsapp através da loja online.",
     },
     {
-      imageSrc: SupportIconImage,
+      imageSrc: FunnelIconImage,
       title: "Captação de leads",
       description: "Prospecte e consiga novos clientes através do e-ncarte.",
     },
     {
-      imageSrc: CustomizeIconImage,
+      imageSrc: GrowthIconImage,
       title: "Expansão e fortalecimento da marca",
       description: "Aumente a confiabilidade e autoridade da sua marca.",
     },
     {
-      imageSrc: ReliableIconImage,
+      imageSrc: LoyaltyIconImage,
       title: "Fidelização",
       description:
         "Entrege inovação e mais profissionalismo aos seus atuais clientes",
     },
     {
-      imageSrc: FastIconImage,
+      imageSrc: TargetIconImage,
       title: "Conheça seu público",
       description: "Entenda exatamente qual público consome seus produtos.",
     },
     {
-      imageSrc: SimpleIconImage,
+      imageSrc: ReportIconImage,
       title: "Relatórios",
       description: "Obtenha informações detalhadas de acesso da sua loja.",
     },
@@ -122,7 +124,11 @@ export default ({
           <Column key={i}>
             <Card>
               <span className="imageContainer">
-                <img src={card.imageSrc || defaultCardImage} alt="" />
+                <img
+                  className="icon"
+                  src={card.imageSrc || defaultCardImage}
+                  alt=""
+                />
               </span>
               <span className="textContainer">
                 <span className="title">{card.title || "Fully Secure"}</span>

@@ -186,7 +186,7 @@ window.env = {
   "npm_package_eslintConfig_extends": "react-app",
   "npm_package_eslintConfig_overrides_0_files_0": "src/**/*.js",
   "npm_package_eslintConfig_overrides_0_rules_import_no_anonymous_default_export": "off",
-  "npm_package_gitHead": "b4012604a7b385b280d6d989bdb592d2053421cc",
+  "npm_package_gitHead": "3bef049a403fa376cac3f046de49bd0b8826fd5b",
   "npm_package_name": "treact",
   "npm_package_private": "true",
   "npm_package_readmeFilename": "README.md",

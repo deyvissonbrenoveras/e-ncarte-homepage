@@ -17,7 +17,7 @@ import Footer from "components/footers/FiveColumnWithBackground.js";
 import heroScreenshotImageSrc from "images/hero-screenshot-1.png";
 import macHeroScreenshotImageSrc from "images/hero-screenshot-2.png";
 import prototypeIllustrationImageSrc from "images/prototype-illustration.svg";
-import { ReactComponent as BriefcaseIcon } from "feather-icons/dist/icons/briefcase.svg";
+import { ReactComponent as EnvironmentcaseIcon } from "../images/environment-icon.svg";
 import { ReactComponent as MoneyIcon } from "feather-icons/dist/icons/dollar-sign.svg";
 
 export default () => {
@@ -61,7 +61,7 @@ export default () => {
         primaryButtonText="FALE CONOSCO"
         primaryButtonUrl={env.contact_us}
         watchVideoButtonText="Veja o vídeo"
-        watchVideoYoutubeUrl="https://www.youtube.com/embed/TBj8i2gS584"
+        watchVideoYoutubeUrl="https://www.youtube.com/embed/T8IQSSnL-Sw"
       />
 
       <MainFeature2
@@ -85,10 +85,10 @@ export default () => {
             iconContainerCss: tw`bg-green-300 text-green-800`,
           },
           {
-            Icon: BriefcaseIcon,
+            Icon: EnvironmentcaseIcon,
             title: "Compromisso com o meio ambiente",
             description:
-              "Com a diminuição da impressão de panfletos, sua impresa irá contribuir diretamente com a preservação do meio ambiente",
+              "Com a diminuição da impressão de panfletos, sua empresa irá contribuir diretamente com a preservação do meio ambiente",
             iconContainerCss: tw`bg-red-300 text-red-800`,
           },
         ]}
