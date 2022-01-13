@@ -13,7 +13,7 @@ import { ReactComponent as PlayIcon } from "feather-icons/dist/icons/play-circle
 import { ReactComponent as CloseIcon } from "feather-icons/dist/icons/x.svg";
 import { ReactComponent as SvgDecoratorBlob1 } from "../../images/svg-decorator-blob-1.svg";
 import { ReactComponent as SvgDecoratorBlob2 } from "../../images/dot-pattern.svg";
-import DesignIllustration from "../../images/design-illustration.svg";
+import appEncarteImage from "../../images/app-e-ncarte.png";
 import env from "react-dotenv";
 
 const Container = tw.div`relative`;
@@ -66,7 +66,7 @@ export default ({
   primaryButtonUrl = "#",
   watchVideoButtonText = "Watch Video",
   watchVideoYoutubeUrl = "https://www.youtube.com/embed/_GuOjXYl5ew",
-  imageSrc = DesignIllustration,
+  imageSrc = appEncarteImage,
   imageCss = null,
   imageDecoratorBlob = false,
 }) => {
