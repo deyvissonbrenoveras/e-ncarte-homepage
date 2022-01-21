@@ -16,7 +16,7 @@ import FAQ from "components/faqs/SingleCol.js";
 import Footer from "components/footers/FiveColumnWithBackground.js";
 import heroScreenshotImageSrc from "images/hero-screenshot-1.png";
 import heroEncarteImageSrc from "images/hero-e-ncarte.png";
-import prototypeIllustrationImageSrc from "images/prototype-illustration.svg";
+import comprarEncarteImage from "images/comprar-encarte.png";
 import { ReactComponent as EnvironmentcaseIcon } from "../images/environment-icon.svg";
 import { ReactComponent as MoneyIcon } from "feather-icons/dist/icons/dollar-sign.svg";
 
@@ -37,6 +37,13 @@ export default () => {
         }
         description="A publicidade digital está em ascendência no cenário atual. O digital predomina todas as ações do mercado no geral, permitindo que traçamos estratégias eficazes para aumentar as vendas do seu negócio."
       />
+      <MainFeature
+        subheading={<Subheading>Quem somos</Subheading>}
+        description="O e-ncarte nasceu em 2019 com a missão de ser um agente de transformação para os clientes através da publicidade em meios digitais, auxiliando-os na divulgação de seus produtos e/ou serviços e contribuindo no desenvolvimento do seu negócio. Atuamos com responsabilidade social, prezando pela transparência nos serviços prestados bem como na divulgação dos mais diversos produtos, tendo como diretriz essencial a sustentabilidade por meio do não emprego de papel."
+        imageSrc={heroScreenshotImageSrc}
+        imageBorder={true}
+        imageDecoratorBlob={true}
+      />
       <FeatureWithSteps
         subheading={<Subheading>Passo a passo</Subheading>}
         heading={
@@ -48,12 +55,6 @@ export default () => {
         imageSrc={heroEncarteImageSrc}
         imageDecoratorBlob={true}
         decoratorBlobCss={tw`xl:w-40 xl:h-40 opacity-15 -translate-x-1/2 left-1/2`}
-      />
-      <MainFeature
-        subheading={<Subheading>Quem somos</Subheading>}
-        imageSrc={heroScreenshotImageSrc}
-        imageBorder={true}
-        imageDecoratorBlob={true}
       />
       <Hero2
         heading="Aplicativo da sua loja"
@@ -74,7 +75,7 @@ export default () => {
           </>
         }
         description="As vantagens de ter uma exposição online são muitas mas podemos destacar alguns benefícios imediatos"
-        imageSrc={prototypeIllustrationImageSrc}
+        imageSrc={comprarEncarteImage}
         showDecoratorBlob={false}
         features={[
           {
