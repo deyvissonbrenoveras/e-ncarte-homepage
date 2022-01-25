@@ -14,7 +14,7 @@ import Testimonial from "components/testimonials/TwoColumnWithImageAndRating.js"
 import FAQ from "components/faqs/SingleCol.js";
 // import GetStarted from "components/cta/GetStarted";
 import Footer from "components/footers/FiveColumnWithBackground.js";
-import heroScreenshotImageSrc from "images/hero-screenshot-1.png";
+import missaoImg from "images/missao.png";
 import heroEncarteImageSrc from "images/hero-e-ncarte.png";
 import comprarEncarteImage from "images/comprar-encarte.png";
 import { ReactComponent as EnvironmentcaseIcon } from "../images/environment-icon.svg";
@@ -38,11 +38,12 @@ export default () => {
         description="A publicidade digital está em ascendência no cenário atual. O digital predomina todas as ações do mercado no geral, permitindo que traçamos estratégias eficazes para aumentar as vendas do seu negócio."
       />
       <MainFeature
+        id="quemSomos"
         subheading={<Subheading>Quem somos</Subheading>}
         description="O e-ncarte nasceu em 2019 com a missão de ser um agente de transformação para os clientes através da publicidade em meios digitais, auxiliando-os na divulgação de seus produtos e/ou serviços e contribuindo no desenvolvimento do seu negócio. Atuamos com responsabilidade social, prezando pela transparência nos serviços prestados bem como na divulgação dos mais diversos produtos, tendo como diretriz essencial a sustentabilidade por meio do não emprego de papel."
-        imageSrc={heroScreenshotImageSrc}
-        imageBorder={true}
-        imageDecoratorBlob={true}
+        imageSrc={missaoImg}
+        imageBorder={false}
+        imageDecoratorBlob={false}
       />
       <FeatureWithSteps
         subheading={<Subheading>Passo a passo</Subheading>}
