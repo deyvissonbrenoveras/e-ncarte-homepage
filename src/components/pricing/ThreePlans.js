@@ -86,6 +86,7 @@ const DecoratorBlob = styled(SvgDecoratorBlob)`
 `;
 
 export default ({
+  id,
   subheading = "Pricing",
   heading = "Flexible Plans.",
   description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -161,7 +162,7 @@ export default ({
   ];
 
   return (
-    <Container>
+    <Container id={id}>
       <ContentWithPaddingXl>
         <HeaderContainer>
           {subheading && <Subheading>{subheading}</Subheading>}

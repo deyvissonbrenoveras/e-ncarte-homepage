@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
+import { HashLink } from "react-router-hash-link";
 
 import useAnimatedNavToggler from "../../helpers/useAnimatedNavToggler.js";
 
@@ -21,6 +22,12 @@ export const NavLinks = tw.div`inline-block`;
 /* hocus: stands for "on hover or focus"
  * hocus:bg-primary-700 will apply the bg-primary-700 class on hover or focus
  */
+export const NavHashLink = tw(HashLink)`
+  text-lg my-2 lg:text-sm lg:mx-6 lg:my-0
+  font-semibold tracking-wide transition duration-300
+  pb-1 border-b-2 border-transparent hover:border-encarte hocus:text-encarte
+`;
+
 export const NavLink = tw.a`
   text-lg my-2 lg:text-sm lg:mx-6 lg:my-0
   font-semibold tracking-wide transition duration-300
@@ -79,10 +86,9 @@ export default ({
    */
   const defaultLinks = [
     <NavLinks key={1}>
-      <NavLink href="/#">Início</NavLink>
-      <NavLink href="#quemSomos">Quem somos</NavLink>
-      <NavLink href="/#">Clientes</NavLink>
-      <NavLink href="/#">Planos</NavLink>
+      <NavHashLink to="/#quem-somos">Quem somos</NavHashLink>
+      <NavHashLink to="/#clientes">Clientes</NavHashLink>
+      <NavHashLink to="/#planos">Planos</NavHashLink>
       <PrimaryLink
         css={roundedHeaderButton && tw`rounded-full`}
         href={env.contact_us}

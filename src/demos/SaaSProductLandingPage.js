@@ -37,10 +37,8 @@ export default () => {
         }
         description="A publicidade digital está em ascendência no cenário atual. O digital predomina todas as ações do mercado no geral, permitindo que traçamos estratégias eficazes para aumentar as vendas do seu negócio."
       />
-      <div id="#quemSomos" name="quemSomos">
-        teste
-      </div>
       <MainFeature
+        id="quem-somos"
         subheading={<Subheading>Quem somos</Subheading>}
         description="O e-ncarte nasceu em 2019 com a missão de ser um agente de transformação para os clientes através da publicidade em meios digitais, auxiliando-os na divulgação de seus produtos e/ou serviços e contribuindo no desenvolvimento do seu negócio. Atuamos com responsabilidade social, prezando pela transparência nos serviços prestados bem como na divulgação dos mais diversos produtos, tendo como diretriz essencial a sustentabilidade por meio do não emprego de papel."
         imageSrc={missaoImg}
@@ -100,6 +98,7 @@ export default () => {
         primaryButtonUrl={env.contact_us}
       />
       <Pricing
+        id="planos"
         subheading={<Subheading>Preços</Subheading>}
         heading={
           <>
@@ -155,6 +154,7 @@ export default () => {
         ]}
       />
       <Testimonial
+        id="clientes"
         subheading={<Subheading>Cases de sucesso</Subheading>}
         description="Veja abaixo o feedback de um dos nossos clientes"
         heading={

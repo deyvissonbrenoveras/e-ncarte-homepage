@@ -76,6 +76,7 @@ const ControlButton = styled.button`
 `;
 
 export default ({
+  id,
   imageSrc = loveIllustrationImageSrc,
   imageRounded = true,
   imageBorder = false,
@@ -110,7 +111,7 @@ export default ({
   const [sliderRef, setSliderRef] = useState(null);
 
   return (
-    <Container>
+    <Container id={id}>
       <ContentWithPaddingXl>
         <Row>
           <ImageColumn>

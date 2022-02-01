@@ -1,6 +1,8 @@
 import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
+import env from "react-dotenv";
+import { HashLink } from "react-router-hash-link";
 import { Container as ContainerBase } from "components/misc/Layouts.js";
 import logoImage from "images/logo-2.png";
 import { ReactComponent as FacebookIcon } from "images/facebook-icon.svg";
@@ -17,6 +19,10 @@ const LogoImg = tw.img`w-8`;
 const LogoText = tw.h5`ml-2 text-2xl font-black tracking-wider`;
 
 const LinksContainer = tw.div`mt-8 font-medium flex flex-wrap justify-center items-center flex-col sm:flex-row`;
+const HsLink = tw(
+  HashLink
+)`border-b-2 border-transparent hocus:text-gray-300 hocus:border-gray-300 pb-1 transition duration-300 mt-2 mx-4`;
+
 const Link = tw.a`border-b-2 border-transparent hocus:text-gray-300 hocus:border-gray-300 pb-1 transition duration-300 mt-2 mx-4`;
 
 const SocialLinksContainer = tw.div`mt-8 md:mt-5 flex`;
@@ -39,11 +45,11 @@ export default () => {
             <LogoText>e-ncarte publicidade</LogoText>
           </LogoContainer>
           <LinksContainer>
-            <Link href="#">Início</Link>
-            <Link href="#">Quem somos</Link>
-            <Link href="#">Clientes</Link>
-            <Link href="#">Planos</Link>
-            <Link href="#">Fale conosco</Link>
+            <HsLink to="/#">Início</HsLink>
+            <HsLink to="/#quem-somos">Quem somos</HsLink>
+            <HsLink to="/#clientes">Clientes</HsLink>
+            <HsLink to="/#planos">Planos</HsLink>
+            <Link href={env.contact_us}>Fale conosco</Link>
           </LinksContainer>
           <SocialLinksContainer>
             <SocialLink href="https://www.facebook.com/agenciaencarte">
