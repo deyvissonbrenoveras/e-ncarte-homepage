@@ -80,7 +80,7 @@ export default ({
   const defaultLinks = [
     <NavLinks key={1}>
       <NavLink href="/#">Início</NavLink>
-      <NavLink href="/#">Quem somos</NavLink>
+      <NavLink href="#quemSomos">Quem somos</NavLink>
       <NavLink href="/#">Clientes</NavLink>
       <NavLink href="/#">Planos</NavLink>
       <PrimaryLink

@@ -51,7 +51,7 @@ background: linear-gradient(135deg, #eb8ea1 0%, #ee4c6c 100%);
 `;
 
 const PlanHeader = styled.div`
-  ${tw`flex flex-col uppercase leading-relaxed py-8`}
+  ${tw`flex flex-col uppercase justify-center leading-relaxed py-8`}
   .name {
     ${tw`font-bold text-xl`}
   }
@@ -61,6 +61,7 @@ const PlanHeader = styled.div`
   .duration {
     ${tw`text-gray-500 font-bold tracking-widest`}
   }
+  min-height: 210px;
 `;
 const PlanFeatures = styled.div`
   ${tw`flex flex-col -mx-8 px-8 py-8 border-t-2 border-b-2 flex-1`}
