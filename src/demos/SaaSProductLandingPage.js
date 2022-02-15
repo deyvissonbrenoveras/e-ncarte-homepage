@@ -75,7 +75,7 @@ export default () => {
             imediatamente.
           </>
         }
-        description="As vantagens de ter uma exposição online são muitas mas podemos destacar alguns benefícios imediatos"
+        description="As vantagens de ter uma exposição online são muitas, mas podemos destacar alguns benefícios imediatos:"
         imageSrc={comprarEncarteImage}
         showDecoratorBlob={false}
         features={[
@@ -102,7 +102,7 @@ export default () => {
         subheading={<Subheading>Preços</Subheading>}
         heading={
           <>
-            Os melhores e flexíveis <HighlightedText>Planos.</HighlightedText>
+            Plano sob <HighlightedText>medida.</HighlightedText>
           </>
         }
         primaryButtonText="COMPRAR"

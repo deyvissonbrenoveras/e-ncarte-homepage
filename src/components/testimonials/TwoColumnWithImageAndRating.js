@@ -151,7 +151,7 @@ export default ({
                         </CustomerTitle>
                       </CustomerTextInfo>
                     </CustomerInfo>
-                    <Controls>
+                    {/* <Controls>
                       <ControlButton onClick={sliderRef?.slickPrev}>
                         <ArrowLeftIcon />
                       </ControlButton>
@@ -159,7 +159,7 @@ export default ({
                       <ControlButton onClick={sliderRef?.slickNext}>
                         <ArrowRightIcon />
                       </ControlButton>
-                    </Controls>
+                    </Controls> */}
                   </CustomerInfoAndControlsContainer>
                 </Testimonial>
               ))}

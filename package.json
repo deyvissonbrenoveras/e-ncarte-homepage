@@ -27,10 +27,11 @@
   },
   "scripts": {
     "start": "react-dotenv && react-scripts start",
-    "build": "react-dotenv && react-scripts build",
+    "build": " PUBLIC_URL=/webapp/ react-dotenv && react-scripts --max_old_space_size=4096 build",
     "test": "react-dotenv && react-scripts test",
     "eject": "react-dotenv && react-scripts eject",
-    "deploy": "react-dotenv && yarn build && netlify deploy --prod --dir=build"
+    "deploy": "react-dotenv && yarn build && netlify deploy --prod --dir=build",
+    "copy": "cp -r build/. ../e-ncarte_backend/client/homepage"
   },
   "eslintConfig": {
     "extends": "react-app",
