@@ -2,6 +2,7 @@
   "name": "treact",
   "version": "0.1.0",
   "private": true,
+  "PUBLIC_URL": "/homepage/",
   "dependencies": {
     "@owaiswiz/use-in-view": "^1.0.16",
     "@testing-library/jest-dom": "^5.11.10",
