@@ -10,7 +10,7 @@ import MainFeature from "components/features/TwoColWithButton.js";
 import MainFeature2 from "components/features/TwoColWithTwoHorizontalFeaturesAndButton.js";
 import FeatureWithSteps from "components/features/TwoColWithSteps.js";
 import Pricing from "components/pricing/ThreePlans.js";
-import Testimonial from "components/testimonials/TwoColumnWithImageAndRating.js";
+// import Testimonial from "components/testimonials/TwoColumnWithImageAndRating.js";
 import FAQ from "components/faqs/SingleCol.js";
 // import GetStarted from "components/cta/GetStarted";
 import Footer from "components/footers/MiniCenteredFooter";
@@ -153,7 +153,7 @@ export default () => {
           },
         ]}
       />
-      <Testimonial
+      {/* <Testimonial
         id="clientes"
         subheading={<Subheading>Cases de sucesso</Subheading>}
         description="Veja abaixo o feedback de um dos nossos clientes"
@@ -175,7 +175,7 @@ export default () => {
             customerTitle: "Diretor, Rede Sertaneja.",
           },
         ]}
-      />
+      /> */}
       <FAQ
         subheading={<Subheading>FAQS</Subheading>}
         description="Veja abaixo as respostas para as perguntas mais comuns"

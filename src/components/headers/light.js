@@ -87,7 +87,7 @@ export default ({
   const defaultLinks = [
     <NavLinks key={1}>
       <NavHashLink to="/#quem-somos">Quem somos</NavHashLink>
-      <NavHashLink to="/#clientes">Clientes</NavHashLink>
+      {/* <NavHashLink to="/#clientes">Clientes</NavHashLink> */}
       <NavHashLink to="/#planos">Planos</NavHashLink>
       <PrimaryLink
         css={roundedHeaderButton && tw`rounded-full`}

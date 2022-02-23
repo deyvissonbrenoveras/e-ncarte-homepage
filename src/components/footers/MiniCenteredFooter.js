@@ -47,7 +47,7 @@ export default () => {
           <LinksContainer>
             <HsLink to="/#">Início</HsLink>
             <HsLink to="/#quem-somos">Quem somos</HsLink>
-            <HsLink to="/#clientes">Clientes</HsLink>
+            {/* <HsLink to="/#clientes">Clientes</HsLink> */}
             <HsLink to="/#planos">Planos</HsLink>
             <Link href={env.contact_us}>Fale conosco</Link>
           </LinksContainer>
