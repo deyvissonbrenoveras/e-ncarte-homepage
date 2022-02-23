@@ -4,7 +4,7 @@ import tw from "twin.macro";
 //eslint-disable-next-line
 import { css } from "styled-components/macro";
 
-import Header, { PrimaryLink } from "../headers/light.js";
+import { /* Header,*/ PrimaryLink } from "../headers/light.js";
 
 import ReactModalAdapter from "../../helpers/ReactModalAdapter.js";
 import ResponsiveVideoEmbed from "../../helpers/ResponsiveVideoEmbed.js";
@@ -25,7 +25,7 @@ const Heading = tw.h1`font-black text-3xl md:text-5xl leading-snug max-w-3xl`;
 const Paragraph = tw.p`my-5 lg:my-8 text-sm lg:text-base font-medium text-gray-600 max-w-lg mx-auto lg:mx-0`;
 
 const Actions = tw.div`flex flex-col items-center sm:flex-row justify-center lg:justify-start mt-8`;
-const PrimaryButton = tw.button`font-bold px-8 lg:px-10 py-3 rounded bg-encarte text-gray-100 hocus:bg-encarte focus:shadow-outline focus:outline-none transition duration-300`;
+// const PrimaryButton = tw.button`font-bold px-8 lg:px-10 py-3 rounded bg-encarte text-gray-100 hocus:bg-encarte focus:shadow-outline focus:outline-none transition duration-300`;
 const WatchVideoButton = styled.button`
   ${tw`mt-4 sm:mt-0 sm:ml-8 flex items-center text-secondary-300 transition duration-300 hocus:text-encarte focus:outline-none`}
   .playIcon {

@@ -11,8 +11,8 @@ import {
 import { Container, ContentWithPaddingXl } from "components/misc/Layouts.js";
 import loveIllustrationImageSrc from "images/love-illustration.svg";
 import { ReactComponent as StarIconBase } from "images/star-icon.svg";
-import { ReactComponent as ArrowLeftIcon } from "images/arrow-left-3-icon.svg";
-import { ReactComponent as ArrowRightIcon } from "images/arrow-right-3-icon.svg";
+// import { ReactComponent as ArrowLeftIcon } from "images/arrow-left-3-icon.svg";
+// import { ReactComponent as ArrowRightIcon } from "images/arrow-right-3-icon.svg";
 
 const Row = tw.div`flex flex-col md:flex-row justify-between items-center`;
 const Column = tw.div`w-full max-w-md mx-auto md:max-w-none md:mx-0`;
@@ -62,18 +62,18 @@ const CustomerTextInfo = tw.div`text-center md:text-left sm:ml-6 mt-2 sm:mt-0`;
 const CustomerName = tw.h5`font-bold text-xl`;
 const CustomerTitle = tw.p`font-medium text-secondary-100`;
 
-const Controls = styled.div`
-  ${tw`flex mt-8 sm:mt-0`}
-  .divider {
-    ${tw`my-3 border-r`}
-  }
-`;
-const ControlButton = styled.button`
-  ${tw`mx-3 p-4 rounded-full transition duration-300 bg-gray-200 hover:bg-gray-300 text-primary-500 hover:text-primary-700 focus:outline-none focus:shadow-outline`}
-  svg {
-    ${tw`w-4 h-4 stroke-3`}
-  }
-`;
+// const Controls = styled.div`
+//   ${tw`flex mt-8 sm:mt-0`}
+//   .divider {
+//     ${tw`my-3 border-r`}
+//   }
+// `;
+// const ControlButton = styled.button`
+//   ${tw`mx-3 p-4 rounded-full transition duration-300 bg-gray-200 hover:bg-gray-300 text-primary-500 hover:text-primary-700 focus:outline-none focus:shadow-outline`}
+//   svg {
+//     ${tw`w-4 h-4 stroke-3`}
+//   }
+// `;
 
 export default ({
   id,
@@ -108,7 +108,7 @@ export default ({
     },
   ],
 }) => {
-  const [sliderRef, setSliderRef] = useState(null);
+  const [/*sliderRef,*/ setSliderRef] = useState(null);
 
   return (
     <Container id={id}>
