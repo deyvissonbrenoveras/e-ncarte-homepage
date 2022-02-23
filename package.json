@@ -28,7 +28,7 @@
   "scripts": {
     "start": "react-dotenv && react-scripts start",
     "build": "PUBLIC_URL=/homepage/ react-dotenv && react-scripts --max_old_space_size=4096 build",
-    "build-windows": "set PUBLIC_URL=/webapp/&&react-dotenv&&react-scripts --max_old_space_size=4096 build",
+    "build-windows": "set PUBLIC_URL=/homepage/&&react-dotenv&&react-scripts --max_old_space_size=4096 build",
     "test": "react-dotenv && react-scripts test",
     "eject": "react-dotenv && react-scripts eject",
     "deploy": "react-dotenv && yarn build && netlify deploy --prod --dir=build",
