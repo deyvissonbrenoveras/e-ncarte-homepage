@@ -89,6 +89,7 @@ export default ({
       <NavHashLink to="/#quem-somos">Quem somos</NavHashLink>
       {/* <NavHashLink to="/#clientes">Clientes</NavHashLink> */}
       <NavHashLink to="/#planos">Planos</NavHashLink>
+      <NavLink to="/lojas">Clientes</NavLink>
       <PrimaryLink
         css={roundedHeaderButton && tw`rounded-full`}
         href={env.contact_us}

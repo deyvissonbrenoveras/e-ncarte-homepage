@@ -196,6 +196,10 @@ export default ({
               <PlanAction>
                 <BuyNowButton
                   css={!plan.featured && highlightGradientsCss[index]}
+                  onClick={() =>
+                    (window.location.href =
+                      "https://api.whatsapp.com/send?phone=558393609556")
+                  }
                 >
                   {primaryButtonText}
                 </BuyNowButton>
