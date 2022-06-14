@@ -8,6 +8,7 @@ import logoImage from "images/logo-2.png";
 import { ReactComponent as FacebookIcon } from "images/facebook-icon.svg";
 import { ReactComponent as WhatsappIcon } from "images/whatsapp-icon.svg";
 import { ReactComponent as InstagramIcon } from "images/instagram-icon.svg";
+import { ReactComponent as GooglePlayStoreIcon } from "images/google-play-store-logo.svg";
 
 const Container = tw(ContainerBase)`bg-footer text-gray-100 -mx-8 -mb-8 py-6`;
 const Content = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
@@ -61,6 +62,9 @@ export default () => {
             </SocialLink>
             <SocialLink href="https://api.whatsapp.com/send?phone=558393609556">
               <WhatsappIcon />
+            </SocialLink>
+            <SocialLink href="https://play.google.com/store/apps/details?id=com.encarte.app">
+              <GooglePlayStoreIcon />
             </SocialLink>
           </SocialLinksContainer>
           <CopyrightText>
