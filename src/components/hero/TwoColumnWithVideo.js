@@ -35,6 +35,18 @@ const WatchVideoButton = styled.button`
     ${tw`ml-2 font-medium`}
   }
 `;
+const ButtonDownloadApp = styled.a`
+  ${tw`mt-4 sm:mt-0 sm:ml-8 flex items-center text-secondary-300 transition duration-300 hocus:text-encarte focus:outline-none`}
+  .playIcon {
+    ${tw`stroke-1 w-12 h-12`}
+  }
+  .playText {
+    ${tw`ml-2 font-medium`}
+  }
+  .playIconContainer {
+    ${tw`ml-2 font-medium`}
+  }
+`;
 
 const IllustrationContainer = tw.div`flex justify-center md:justify-end items-center relative max-w-3xl lg:max-w-none`;
 
@@ -94,6 +106,11 @@ export default ({
                 </span>
                 <span className="playText">{watchVideoButtonText}</span>
               </WatchVideoButton>
+              <ButtonDownloadApp href="https://play.google.com/store/apps/details?id=com.encarte.app">
+                <span className="playIconContainer">
+                  Baixe o aplicativo
+                </span>
+              </ButtonDownloadApp>
             </Actions>
           </LeftColumn>
           <RightColumn>
